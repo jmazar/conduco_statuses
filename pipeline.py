@@ -31,7 +31,7 @@ def run(branch: str) -> co.Serial:
     access_token = co.api.Secrets().get_user_secrets(
         auth_token)["GITHUB_ACCESS_TOKEN"]
     stdout = subprocess.check_output(
-        f"git ls-remote git@github.com:jmazar/conducto_statuses.git refs/heads/{branch} | cut -f1",
+        f"git ls-remote git@github.com:jmazar/conduco_statuses.git refs/heads/{branch} | cut -f1",
         shell=True)
     sha = stdout.decode("utf-8").strip()
     print(sha)
