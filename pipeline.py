@@ -38,7 +38,7 @@ def run(branch: str) -> co.Serial:
     print(access_token)
     creator = co.callback.github_status_creator(
         owner="jmazar",
-        repo="https://github.com/jmazar/conducto_statuses",
+        repo="conduco_statuses",
         sha=sha,
         access_token=access_token,
     )
